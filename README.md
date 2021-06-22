@@ -1,0 +1,1 @@
+Purpose: This will be a learning experience where I attempt to replicate the "google.com" homepage.
