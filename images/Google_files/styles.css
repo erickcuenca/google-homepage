@@ -68,7 +68,7 @@ li svg {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 56vh;
+    min-height: 48vh;
 }
 #logo {
     width: 272px;
@@ -111,30 +111,11 @@ li svg {
 }
 
 #buttons {
-    padding-top: 20px;
+    padding-top: 48px;
 }
 
 #buttons button {
-    padding: 10px 16px;
+    padding: 16px;
     font-size: 14px;
     margin: 11px 4px;
-    border: 1px solid rgb(248, 248, 248);
-    background-color: rgb(248, 248, 248);
-    border-radius: 6px;
-}
-#buttons button:hover {
-    cursor: pointer;
-    border: 1px solid rgb(230, 230, 230);
-    box-shadow: 0px .25px .5px .25px rgb(230, 230, 230);
-
-}
-#buttons button:active {
-    cursor: pointer;
-    border: 1px solid rgb(57, 126, 253);
-}
-footer {
-    height: 47px;
-    background-color: rgb(248, 248, 248);
-    position: sticky;
-    bottom: 0;
 }
