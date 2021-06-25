@@ -1,12 +1,20 @@
 body {
+    display: flex;
     margin: 0px;
+    height: 100vh;
+    flex-direction: column;  
+}
+header {
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 nav {
     display: flex;
     flex-direction: row;
     font-size: 14px;
 }
-#left_container {
+.left_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +77,10 @@ li svg {
     align-items: center;
     flex-direction: column;
     min-height: 56vh;
+    padding-top: 25px;
+}
+#logo_wrapper {
+    display: flex;
 }
 #logo {
     width: 272px;
@@ -76,7 +88,8 @@ li svg {
     padding-bottom: 22px;
 }
 #search_box {
-    width: 584px;
+    width: clamp(460px, 90vw, 584px);
+    min-width: 360px;
     height: 46px;
     border: 1px solid rgb(226, 225, 225);
     border-radius: 10%/100%;
@@ -96,7 +109,7 @@ li svg {
 #search {
     border: 0px none;
     outline: 0px none;
-    width: 487px;
+    width: clamp(363px, 75vw, 487px);
     height: 34px;
     font-size: 16px;
 }
@@ -111,10 +124,12 @@ li svg {
 }
 
 #buttons {
+    display: flex;
     padding-top: 20px;
 }
 
 #buttons button {
+    display: flex;
     padding: 10px 16px;
     font-size: 14px;
     margin: 11px 4px;
@@ -133,8 +148,40 @@ li svg {
     border: 1px solid rgb(57, 126, 253);
 }
 footer {
+    display: flex;
     height: 47px;
     background-color: rgb(248, 248, 248);
     position: sticky;
     bottom: 0;
+    display: flex;
+}
+footer ul {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+footer ul li {
+    padding: 20px;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+
+}
+#footer_container {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 565px;
+
+}
+#left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#right {
+    margin-left: auto;
+}
+.flex {
+    display: flex;
 }
